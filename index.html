@@ -5,70 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BHC</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
 </head>
 <body>
 
-    <header>
-        <img id="logo" src="resources/logo.png">
+    <header class="gradient-background">
+      <div id="logo">
+        <img src="bhc_logo.png">
+      </div>
         <div id="name-header">
             <h1>Barbhuyan Homoeo Clinic</h1>
             <p>Your Health, Our Priority <br>
             Since 1965</p>
         </div>
     </header>
-    
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="team.html">Our Team</a>
-        <a href="contact.html">Schedule an appointment</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About Us</a>
-    </nav>
+<!--Navigation bar-->
+<nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href=".\index.html">BHC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href=".\index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=".\services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=".\team.html">Our team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=".\gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=".\about.html">About us</a>
+          </li>
+        </ul>
+        <!--No appointment button on the Homepage navbar as it is featured in the body-->
+      </div>
+    </div>
+</nav>
 
+<!--Welcome card-->
     <section id="home">
-        <h2>Welcome to Barbhuyan Homoeo Clinic – A Legacy of Healing Since 1965</h2>
-        <p>Established by the late Alhaj Dr. Abdul Hoque Barbhuyan, 
-            Barbhuyan Homoeo Clinic (BHC) stands as a distinguished 
-            center for homeopathic treatment in Assam. Continuing the 
-            tradition of excellence, today, Dr. Taiyab Hussain Barbhuyan, 
-            an experienced physician, is available for consultations.</p>
-            
-        <p>Our clinic has evolved into a prominent hub, 
-            attracting patients from various districts seeking 
-            effective homoeopathic treatments. Specializing in top-class 
-            care for chronic diseases, we pride ourselves on delivering satisfactory results. 
-            At BHC, we uphold an unwavering commitment to quality and service, 
-            utilizing leading brands renowned for their unparalleled efficacy.</p>
-        
-        <p>Experience the epitome of holistic healing with Barbhuyan Homoeo Clinic, 
-            where our legacy meets contemporary excellence.</p>
+        <h2>Welcome to Barbhuyan Homoeo Clinic</h2>
+        <p>A Legacy of Healing Since 1965</p>
     </section>
 
-    <section id="home" class="container">
+    <!--Appointment card-->
+    <section>
         <p>Schedule an appointment with us by clicking on the button below!</p>
         <button class="book-appointment-btn" onclick="location.href='contact.html'">Book an Appointment</button>
     </section>
 
+    <!--Adress card-->
     <section>
         <h2>Address</h2>
         <Address>Dhekiajuli address: Ward No.2, Dhekiajuli, Assam - 784110</Address>
     </section>
 
+    <!--Map card-->
     <section id="map">
         <h2>Find us on Google Map</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.249683314243!2d92.4777486!3d26.7044693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3744cb4080472523%3A0x998a0422b21360e1!2sBarbhuyan%20Homoeo%20Clinic!5e0!3m2!1sen!2sin!4v1709398858832!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
+<!--Footer-->
     <footer>
         &copy; 2024 BHC. All Rights Reserved.
     </footer>
 
-    <script>
-        function toggleNav() {
-        var navList = document.querySelector('.nav-list');
-        navList.classList.toggle('active');
-      }
-    </script>
+<!-- Script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

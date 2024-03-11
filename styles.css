@@ -2,24 +2,26 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url(indexbg.jpg);
+    background-size: cover;
 }
 
 header {
-    background-color: #007bff;
+    background: linear-gradient(300deg, #1DB299, #C9E8E2);
+    animation: gradient-animation 18s ease infinite;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
     display: grid;
     grid-template-columns: 120px auto;
 }
 
 #logo {
-margin: 0 10px 10px;
+margin: auto 10px;
 }
 
-header > img {
-    width: 100px;
-    height: 100px;
+header img {
+    width: auto;
+    height: 50px;
 }
 
 header > h1 p {
@@ -30,20 +32,18 @@ header > h1 p {
 #name-header {
     display: flex;
     flex-direction: column;
+    padding: 10px 0 0;
 }
 
 @media screen and (max-width: 600px) {
     /* Styles for screens smaller than 600px */
-       header {
-        transition: all 0.5s ease-in-out;
-    }
     #name-header {
         justify-content: flex-end;
         text-align: right;
         font-size: 11px;
-        transition: all 0.5s ease-in-out;
     }
 }
+/*
 nav {
     background-color: #555;
     padding: 10px 0;
@@ -62,7 +62,7 @@ nav a {
     flex-grow: 1;
     flex-shrink: 1;
 }
-
+*/
 section {
     max-width: 800px;
     margin: 20px auto;
@@ -70,6 +70,11 @@ section {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+section:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 header > h1 {
@@ -86,18 +91,18 @@ p {
 }
 
 header p{
-    color: white;;
+    color: white;
 }
 
 .book-appointment-btn {
     display: block;
     margin: 20px auto;
-    padding: 15px 30px;
+    padding: 10px 25px;
     background-color: #2ecc71;
     color: white;
     text-decoration: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -142,10 +147,19 @@ header p{
     width: 170px;
     border: black 3px solid;
     border-radius: 10px;
+    animation: rotateClockwise 100003ms linear infinite;
 }
 
-.team-member > h3, p {
+.team-member > h3 {
     margin: 5px 0;
+}
+.team-member > p {
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+#services > h2 {
+    margin-bottom: 40px;
 }
 
 footer {
