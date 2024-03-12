@@ -178,7 +178,7 @@ header p{
 }
 
 .gallery > img {
-    height: 200px;
+    max-height: 200px;
     width: auto;
     border: grey 3px solid;
     border-radius: 10px;
