@@ -53,40 +53,6 @@
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8w_arkm4bSdjWr0byyFAzFFK2pvjryanb6XdQ8dzGj2Z1LA/viewform?embedded=true" width="640" height="1280" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </section>
 
-    <!--
-    <script>
-        function submitForm() {
-            // Collect form data
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var message = document.getElementById('message').value;
-
-            // Send the data to the server using Fetch API
-            fetch('contact.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: 'name=' + encodeURIComponent(name) +
-                      '&email=' + encodeURIComponent(email) +
-                      '&message=' + encodeURIComponent(message),
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    // Redirect to the thank you page
-                    window.location.href = 'thankyou.html';
-                } else {
-                    alert('Failed to submit the form. Please try again.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('An error occurred. Please try again.');
-            });
-        }
-    </script>
-    -->
     <!-- Your footer here -->
     <footer>
         &copy; 2024 BHC. All Rights Reserved.
